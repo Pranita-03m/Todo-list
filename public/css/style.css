@@ -1,0 +1,99 @@
+/* Apply a diagonal gradient background */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, lavender 50%, white 50%);
+}
+
+/* Style for the main container */
+.box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the heading */
+h1 {
+    color: #9d9dcc;
+    font-size: 24px;
+}
+
+/* Style for the task list items */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f8f8;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Style for the task text */
+.item p {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style for the checkbox */
+.item input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+
+}
+    /* Strike-through text when checkbox is checked */
+.item input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+    color: gray;
+    transition: 0.3s ease-in-out;
+}
+
+/* Style for the input form */
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the input field */
+input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Style for the submit button */
+button {
+    background-color: #9d9dcc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d3d3ff;
+}
+
+/* Style for "No tasks" message */
+.no-tasks {
+    color: gray;
+    font-style: italic;
+    margin-bottom: 10px;
+}
